@@ -35,7 +35,7 @@
             </objects>
             <point key="canvasLocation" x="1022" y="274"/>
         </scene>
-        <!--Favorite-->
+        <!--Item 1-->
         <scene sceneID="2dc-eg-owY">
             <objects>
                 <viewController id="Akh-0o-Zqh" sceneMemberID="viewController">
@@ -57,7 +57,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YAO-jD-vHe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favorite" image="square.and.arrow.up" catalog="system" id="9yY-LU-0nY"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="9yY-LU-0nY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iv-RD-eIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +82,4 @@
             <point key="canvasLocation" x="101" y="-50"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-    </resources>
 </document>
