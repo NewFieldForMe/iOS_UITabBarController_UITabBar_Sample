@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BkT-ay-Cvx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BkT-ay-Cvx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,7 +29,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A6h-Hk-Lz4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="E2I-Qr-RPi"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="pencil.and.outline" catalog="system" id="E2I-Qr-RPi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1YM-fo-t3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +57,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YAO-jD-vHe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="9yY-LU-0nY"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="pencil.circle" catalog="system" id="9yY-LU-0nY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iv-RD-eIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +67,7 @@
         <scene sceneID="X1X-AA-xxY">
             <objects>
                 <tabBarController id="BkT-ay-Cvx" customClass="IBTabBarController" customModule="TryOutProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Edf-iy-ohz">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" itemPositioning="centered" itemSpacing="48" itemWidth="32" id="Edf-iy-ohz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,4 +82,8 @@
             <point key="canvasLocation" x="101" y="-50"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
+        <image name="pencil.circle" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
