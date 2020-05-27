@@ -22,7 +22,9 @@ private extension MainTabBarController {
         firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
         let secondViewController = SecondViewController()
         secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 0)
-        viewControllers = [firstViewController, secondViewController]
+        let thirdViewController = ThirdViewController()
+        thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
+        viewControllers = [firstViewController, secondViewController, thirdViewController]
     }
 }
 
