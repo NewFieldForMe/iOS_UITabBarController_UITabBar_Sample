@@ -35,7 +35,7 @@
             </objects>
             <point key="canvasLocation" x="1022" y="274"/>
         </scene>
-        <!--Item 1-->
+        <!--ごみ箱-->
         <scene sceneID="2dc-eg-owY">
             <objects>
                 <viewController id="Akh-0o-Zqh" sceneMemberID="viewController">
@@ -57,7 +57,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YAO-jD-vHe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="pencil.circle" catalog="system" id="9yY-LU-0nY"/>
+                    <tabBarItem key="tabBarItem" title="ごみ箱" image="trash" catalog="system" landscapeImage="pencil" badgeValue="yamada" selectedImage="trash.fill" id="9yY-LU-0nY">
+                        <color key="badgeColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iv-RD-eIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,7 +85,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pencil" catalog="system" width="64" height="56"/>
         <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
-        <image name="pencil.circle" catalog="system" width="64" height="60"/>
+        <image name="trash" catalog="system" width="60" height="64"/>
+        <image name="trash.fill" catalog="system" width="60" height="64"/>
     </resources>
 </document>
