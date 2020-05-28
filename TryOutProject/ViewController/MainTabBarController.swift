@@ -32,7 +32,11 @@ extension MainTabBarController: UITabBarControllerDelegate {
     // shouldSelectメソッドを実装
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController == tabBarController.viewControllers?[1] {
-            present(ModalViewController(), animated: true, completion: nil)
+            let modal = ModalViewController()
+            modal.selectThirdTab = { [weak self] in
+                self?.selectedIndex = 2
+            }
+            present(modal, animated: true, completion: nil)
             return false
         }
         return true
