@@ -40,6 +40,10 @@ private extension MainTabBarController {
 extension MainTabBarController: UITabBarControllerDelegate {
     // shouldSelectメソッドを実装
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if viewController == tabBarController.viewControllers?[0] {
+            // badgeを消す
+            viewController.tabBarItem.badgeValue = nil
+        }
         if viewController == tabBarController.viewControllers?[1] {
             let modal = ModalViewController()
             modal.selectThirdTab = { [weak self] in
