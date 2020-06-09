@@ -15,4 +15,16 @@ class CustomTabBar: UITabBar {
         sizeThatFits.height = 70
         return sizeThatFits
     }
+
+    func barItemImage(index: Int) -> UIImageView? {
+        let view = subviews[index + 1]
+        return view.recursiveSubviews.compactMap { $0 as? UIImageView }
+        .first
+    }
+}
+
+extension UIView {
+    var recursiveSubviews: [UIView] {
+        return subviews + subviews.flatMap { $0.recursiveSubviews }
+    }
 }

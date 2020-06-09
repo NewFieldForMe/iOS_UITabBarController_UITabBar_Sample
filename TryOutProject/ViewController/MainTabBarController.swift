@@ -62,4 +62,22 @@ extension MainTabBarController: UITabBarControllerDelegate {
         }
         return true
     }
+
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        guard let index = tabBar.items?.firstIndex(of: item),
+            let customTabBar = tabBar as? CustomTabBar,
+            let imageView = customTabBar.barItemImage(index: index) else {
+                return
+        }
+        iconBounceAnimation(view: imageView)
+    }
+
+    func iconBounceAnimation(view: UIView) {
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
+            view.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
+            UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
+                view.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }, completion: nil)
+        }, completion: nil)
+    }
 }
