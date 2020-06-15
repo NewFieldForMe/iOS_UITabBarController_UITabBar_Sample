@@ -13,6 +13,8 @@ class CustomTabBar: UITabBar {
         super.sizeThatFits(size)
         var sizeThatFits = super.sizeThatFits(size)
         sizeThatFits.height = 70
+        sizeThatFits.height += safeAreaInsets.bottom
+
         return sizeThatFits
     }
 
